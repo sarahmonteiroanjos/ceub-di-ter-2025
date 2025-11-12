@@ -1,0 +1,86 @@
+/* ======= ESTILOS GERAIS ======= */
+body {
+    font-family: initial;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* ======= TÍTULO PRINCIPAL ======= */
+h1.destaque {
+    text-align: center;
+    color: #04234e;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* ======= LINHA DIVISÓRIA ======= */
+hr {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #1a3c6b, #5d9cec, #1a3c6b);
+    margin: 20px 0;
+    border-radius: 2px;
+}
+
+/* ======= IMAGEM ======= */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ======= SUBTÍTULOS ======= */
+h3 {
+    color: #1a3c6b;
+    margin-top: 25px;
+}
+
+/* ======= PARÁGRAFOS ======= */
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+/* ======= LISTA DE ELENCO ======= */
+ul {
+    max-width: 600px;
+    margin: 10px auto 20px auto;
+    padding-left: 40px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+/* ======= LINK DO IMDB ======= */
+a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #003366;
+    text-shadow: 0 0 5px rgba(0, 86, 179, 0.4);
+}
+
+/* ======= SEÇÃO FINAL ======= */
+p a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: #1a3c6b;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+p a:hover {
+    background-color: #0e2442;
+}
