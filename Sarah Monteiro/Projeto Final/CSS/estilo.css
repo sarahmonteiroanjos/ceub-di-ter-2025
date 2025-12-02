@@ -14,7 +14,7 @@ font-size: 14px;
 }
 
 #event-subscription {
-    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.4)), url("..//img/banner.jpg");
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.4)), url("..//img/banner.jpg.jpg");
     background-position: center ;
     background-size: cover ;
     height: 85vh;
@@ -27,16 +27,34 @@ font-size: 14px;
 h2 {
     text-transform: uppercase;
     margin-bottom: 0.3em;
+    align-items: center;
 }
 
 #disclamer h2 {
     color: var(--primary);
+    align-items: center;
 }
 
 #disclamer .about-you {
     font-size: 1.2em;
     max-width: 350px;
     font-weight: bold;
+    align-items: center;
+    gap: 50px;
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto; 
+    
+}
+
+#disclamer img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 25px; 
+    padding: 10px;
+    background-color: var(--primary); 
+    flex-shrink: 0;
+
 }
 #subscription-form {
     background-color:var(--primary);
@@ -198,6 +216,7 @@ h2 {
 }
 
 .project img {
+  
     width: auto;
     max-width: 50%;
     height: 350px;
@@ -228,22 +247,67 @@ h2 {
 
   /* Rodapé */
 
-#footer {
-    background-color: var(--secondary);
+  #footer {
+    background: #E59A94; /* fundo rosa suave */
+    color: #331412;
+    padding: 2.5rem 1rem;
     text-align: center;
-    color: var(--text-secondary);
-    height: 150px;
+  
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+  
+    border-top: 4px solid rgba(0,0,0,0.08);
+    font-family: "Poppins", sans-serif;
   }
   
-  #footer a {
-    color: var(--secondary);
-    margin: 8px;
-  }
-  
+  /* Título do footer */
   #footer h3 {
-    font-size: 1.8em;
-    margin-bottom: 0.5em;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
   }
+  
+  /* Container de ícones */
+  .footer-icons {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-top: 0.4rem;
+  }
+  
+  /* Ícones */
+  .footer-icons a {
+    color: #331412;
+    font-size: 1.7rem;
+    transition: 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #5b2a26;           /* tom mais escuro no hover */
+    transform: scale(1.15);   /* leve zoom */
+  }
+  
+  /* Créditos */
+  .footer-credits {
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    #footer {
+      padding: 2rem 1rem;
+    }
+  
+    #footer h3 {
+      font-size: 1.4rem;
+    }
+  
+    .footer-icons a {
+      font-size: 1.5rem;
+    }
+  }
+
+  
